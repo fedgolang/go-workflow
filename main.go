@@ -174,6 +174,4 @@ func main() {
 		fmt.Println(err)
 		return
 	}
-
-	time.Sleep(time.Minute * 1)
 }
