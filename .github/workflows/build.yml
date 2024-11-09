@@ -6,7 +6,7 @@ jobs:
     container: golang:1.23.3
     steps:
       - name: Run Tests
-        run: GOOS=linux GOARCH=amd64 go test /app
+        run: GOOS=linux GOARCH=amd64 go test
 
       - name: Vet
         run: |
