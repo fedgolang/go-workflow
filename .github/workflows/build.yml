@@ -5,8 +5,11 @@ jobs:
     runs-on: ubuntu-latest
     container: golang:1.23.3
     steps:
-      - name: Run Tests
+      - uses: actions/checkout@v4
+
+      - name: Run Unit Tests
         run: GOOS=linux GOARCH=amd64 go test
+
       - name: Vet
         run: |
           go vet ./...
